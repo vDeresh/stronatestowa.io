@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(144, 0, 228);
+  }
+  
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav a:hover {
+    background-color: rgb(153, 0, 255);
+  }  
+
+.main1 h1 {
+  font-size: 36px;
+  color: rgb(46, 0, 78);
+  font-family: Arial, sans-serif;
+}
+
+.main1 p {
+  font-size: 20px;
+  color: rgb(15, 15, 15);
+  font-family: Arial, sans-serif;
+}
