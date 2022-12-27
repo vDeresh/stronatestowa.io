@@ -1,28 +1,26 @@
-nav {
-    display: flex;
-    justify-content: flex-start;
-    background-color: rgb(144, 0, 228);
-  }
-  
-  nav a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-  }
-  
-  nav a:hover {
-    background-color: rgb(153, 0, 255);
-  }  
-
-.main1 h1 {
-  font-size: 36px;
-  color: rgb(46, 0, 78);
-  font-family: Arial, sans-serif;
+h1, p {
+  width: 70%;
 }
 
-.main1 p {
-  font-size: 20px;
-  color: rgb(15, 15, 15);
-  font-family: Arial, sans-serif;
+img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+}
+
+.grace {
+  display: flex;
+  float: left;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grace-img {
+  float: right;
+  margin-top: 20px;
+  position: relative;
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+    
+    <head>
+        <title>Strona nie istnieje lub jest w budowie</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/style2.css">
+    </head>
+
+    <nav>
+        <img src="pliki/obrazy/Logo64.png" alt="Ikona">
+        <a href="index.html">Strona główna</a>
+        <a href="error.html">CV</a>
+        <a href="html/portfolio.html">Portfolio</a>
+        <a href="https://github.com/vDeresh" target="_blank">GitHub</a>
+    </nav>
+
+    <body>
+        <div class="center">
+
+            <h1>Strona nie istnieje lub jest w budowie</h1>
+            <div class="center">
+                <p>Powrót na stronę główną nastąpi za <span id="counter">10</span> sekund.</p>
+            </div>
+        </div>
+
+            <script>
+            var counterElement = document.getElementById("counter");
+        
+            var countdown = 10;
+        
+            setInterval(function() {
+
+                countdown--;
+        
+                counterElement.innerText = countdown;
+
+                if (countdown === 0) {
+                window.location.href = "index.html";
+                }
+            }, 1000);
+            </script>
+
+    </body>
+  
+</html>
