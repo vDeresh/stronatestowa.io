@@ -1,12 +1,20 @@
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
 nav {
   display: flex;
   justify-content: flex-start;
   background-color: rgb(0, 0, 0);
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;  
+  text-align: center;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
 }
   
 nav a {
@@ -20,15 +28,26 @@ nav a {
 }
 
 nav a:hover {
+  transition: 0.2s ease-in-out;
   color: rgba(255, 255, 255, 0.753);
-}  
+}
+
+nav .ostr {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+nav .ostr:hover {
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.753);
+}
 
 nav img {
+  transition: 0.3s ease-in-out;
   border-radius: 0px;
   box-shadow: 0 0 0;
 }
 
-body {  
+body { 
+  transition: all 0.3s ease-in-out;
   margin-top: 80px;
   margin-left: 16px;
   background-color: rgb(107, 107, 107);
@@ -41,6 +60,7 @@ h1 {
 }
 
 p {
+  transition: 0.2s ease-in-out;
   font-size: 20px;
   color: rgb(0, 0, 0);
   font-family: 'Montserrat', Arial, sans-serif;
