@@ -7,7 +7,7 @@ nav {
   justify-content: flex-start;
   background-color: rgb(24, 23, 41);
   position: fixed;
-  text-align: center;
+  text-align: flex-start;
   box-shadow: 0 0 10px rgb(0, 0, 0);
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@ nav {
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
-  
+
 nav a {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -50,6 +50,7 @@ body {
   transition: all 0.3s ease-in-out;
   margin-top: 80px;
   margin-left: 20px;
+  margin-right: 20px;
   background-color: rgb(87, 96, 134);
 }
 
@@ -68,6 +69,7 @@ h2 {
 }
 
 p {
+  width: 50%;
   transition: 0.2s ease-in-out;
   font-size: 20px;
   color: rgb(0, 0, 0);
@@ -76,4 +78,56 @@ p {
 
 section {
   height: 1000px;
+}
+
+@media screen and (max-width: 1080px) and (max-height: 2400px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(24, 23, 41);
+    position: fixed;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+  }
+    
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 6px;
+    font-size: 48px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  h1 {
+    margin-top: calc(50px + 1em);
+    font-size: 72px;
+    color: rgb(26, 23, 46);
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
+  
+  h2 {
+    margin-top: calc(50px + 1em);
+    font-size: 64px;
+    color: rgb(26, 23, 46);
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
+  
+  p {
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
 }

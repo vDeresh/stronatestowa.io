@@ -47,3 +47,19 @@ document.querySelector('a[href="#section-1"]').addEventListener('click', functio
   });
   this.classList.add("ostr");
 });
+
+var previousScroll = 0;
+
+window.onscroll = function() {
+  var currentScroll = window.scrollY;
+
+  if (currentScroll > previousScroll) {
+    // Przewijanie w dół
+    document.querySelector("nav").style.top = "-50px";
+  } else {
+    // Przewijanie w górę
+    document.querySelector("nav").style.top = "0";
+  }
+
+  previousScroll = currentScroll;
+}
