@@ -55,6 +55,7 @@ body {
 }
 
 h1 {
+  text-align: center;
   margin-top: calc(50px + 1em);
   font-size: 36px;
   color: rgb(26, 23, 46);
@@ -80,8 +81,16 @@ section {
   height: 1000px;
 }
 
+@media screen and (min-width: 1081px) {
+  .stronaglowna {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1080px) and (max-height: 2400px) {
   nav {
+    height: 152px;
+    bottom: 0;
     display: flex;
     justify-content: center;
     background-color: rgb(24, 23, 41);
@@ -99,8 +108,8 @@ section {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin-left: 10px;
-    margin-top: 6px;
-    font-size: 48px;
+    margin-top: 18px;
+    font-size: 64px;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
   }
@@ -109,16 +118,25 @@ section {
     display: none;
   }
 
+  nav .ostr {
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  
+  nav .ostr:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+
   h1 {
+    text-align: center;
     margin-top: calc(50px + 1em);
-    font-size: 72px;
+    font-size: 86px;
     color: rgb(26, 23, 46);
     font-family: 'Montserrat', Arial, sans-serif;
   }
   
   h2 {
     margin-top: calc(50px + 1em);
-    font-size: 64px;
+    font-size: 72px;
     color: rgb(26, 23, 46);
     font-family: 'Montserrat', Arial, sans-serif;
   }

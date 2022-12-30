@@ -9,23 +9,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style1.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel='stylesheet'>
 </head>
 
-<body class="">
+<body>
 
   <nav>
 
     <img src="pliki/obrazy/Ikona/Logo64t.png" alt="Ikona">
     <a class="ostr" href="#stronaglowna">O mnie</a>
-    <a href="404.html">CV</a>
+    <a href="404.html" style="display: none;">CV</a>
     <a href="#portfolio">Portfolio</a>
     <a href="https://github.com/vDeresh" target="_blank">GitHub</a>
 
   </nav>
   
-  <div id="stronaglowna" class="center">
+  <div id="stronaglowna">
     
-    <h1>Hej</h1>
+    <p class="stronaglowna"> </p>
+    <h1>Lorem ipsum</h1>
 
   </div>
 
@@ -88,16 +90,16 @@
 
   <script>
 
-    document.querySelector('nav img').addEventListener('click', function() {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
+  document.querySelector('nav img').addEventListener('click', function() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
     });
-      
+  });
+    
 
-    const links = document.querySelectorAll('a[href*="#"]');
+  const links = document.querySelectorAll('a[href*="#"]');
 for (let link of links) {
   link.addEventListener('click', function(event) {
     event.preventDefault();
@@ -109,7 +111,6 @@ for (let link of links) {
 }
   </script>
 
-<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.2/dist/smooth-scroll.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

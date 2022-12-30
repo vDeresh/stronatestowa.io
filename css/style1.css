@@ -27,7 +27,7 @@ a {
 
 a {
   text-decoration: none;
-  color: rgb(43, 43, 43);
+  color: rgb(8, 0, 36);
 }
 
 .grace p {
@@ -41,5 +41,17 @@ img {
 
 #portfolio {
   margin-top: calc(20px + 1em);
-  min-height: 100vh;
+  min-height: 110vh;
+}
+
+@media screen and (max-width: 1080px) and (max-height: 2400px) {
+  
+  #portfolio {
+    margin-top: calc(20px + 1em);
+    min-height: 98vh;
+  }
+
+  .grace p {
+    width: 90%;
+  }
 }
